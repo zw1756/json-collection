@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.indexBody {
+  background-color: #0fffc8;
+}
+
+.indexNav {
+  background-color: #f0f00f;
+  font-size: 2.5vw;
+  display: flex;
+  flex-direction: row;
+  padding: 1vw 0;
+}
+
+.indexNav a {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  text-decoration: none;
+  color: black;
+}
+
+.indexNav a:nth-of-type(1) {
+  font-family: 'Orelega One', cursive;
+}
+
+.indexNav a:nth-of-type(2) {
+  font-family: 'Karantina', cursive;
+}
+
+.indexNav a:nth-of-type(2):hover {
+  border-bottom: 2px solid black;
+}
+
+#activeLink {
+  border-bottom: 2px solid black;
+}
+
+.indexhead {
+  background-image: url("0.png");
+  background-position: center;
+  background-size: cover;
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+#indexcontent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5vw;
+  grid-column-gap: 3vw;
+  grid-row-gap: 3vw;
+}
+
+.indexContentElement {
+  border: 3px solid #2b4736;
+  padding-bottom: 1vw;
+  transition: transform 250ms;
+}
+
+.indexContentElement:hover {
+  transform: scale(1.05);
+}
+
+.indexContentHeaderImage {
+  height: 22vw;
+  max-width: 100%;
+  object-fit: cover;
+  margin-top:20px;
+  margin-left:90px;
+}
+
+.indexContentH2 {
+  text-align: center;
+  margin: 1vw;
+}
+
+.indexContentP {
+  text-align: center;
+}
